@@ -1,0 +1,5 @@
+httpx
+anthropic
+resend
+python-dotenv
+beautifulsoup4

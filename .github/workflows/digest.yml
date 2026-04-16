@@ -1,0 +1,44 @@
+name: Daily Inspiration Digest
+
+on:
+  schedule:
+    - cron: '0 8 * * *'   # 8am UTC every day
+  workflow_dispatch:        # manual trigger for testing
+
+jobs:
+  run-digest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write       # needed to commit seen_items.json and digests/
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
+          PRODUCT_HUNT_TOKEN: ${{ secrets.PRODUCT_HUNT_TOKEN }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python -m src.main
+
+      - name: Commit state and digest
+        run: |
+          git config user.name "digest-bot"
+          git config user.email "bot@noreply.github.com"
+          git add seen_items.json digests/
+          git diff --staged --quiet || git commit -m "chore: digest $(date -u +%Y-%m-%d) [skip ci]"
+          git push
