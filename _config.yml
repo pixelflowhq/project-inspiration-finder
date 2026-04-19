@@ -1,0 +1,9 @@
+title: Project Inspiration Digest
+description: Daily digest of side project ideas from Hacker News, Reddit, GitHub Trending, Product Hunt, and Etsy.
+theme: minima
+
+defaults:
+  - scope:
+      path: digests
+    values:
+      layout: post

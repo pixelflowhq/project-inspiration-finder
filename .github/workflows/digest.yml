@@ -36,10 +36,13 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
         run: python -m src.main
 
+      - name: Regenerate index
+        run: python -m src.generate_index
+
       - name: Commit state and digest
         run: |
           git config user.name "digest-bot"
           git config user.email "bot@noreply.github.com"
-          git add seen_items.json digests/
+          git add seen_items.json digests/ index.md
           git diff --staged --quiet || git commit -m "chore: digest $(date -u +%Y-%m-%d) [skip ci]"
           git push

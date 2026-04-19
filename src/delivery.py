@@ -9,7 +9,9 @@ DIGEST_DIR.mkdir(exist_ok=True)
 
 def write_digest(content: str, date: str) -> None:
     path = DIGEST_DIR / f"{date}.md"
-    path.write_text(f"# Inspiration Digest — {date}\n\n{content}\n")
+    path.write_text(
+        f"---\nlayout: post\ntitle: Inspiration Digest — {date}\ndate: {date}\n---\n\n{content}\n"
+    )
     print(f"Digest written to {path}")
 
 
