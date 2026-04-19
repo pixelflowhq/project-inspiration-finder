@@ -169,5 +169,86 @@
       "2026-04-16"
     ],
     "last_delivery": "markdown"
+  },
+  "https://github.com/drasimwagan/mdv": {
+    "title": "Show HN: MDV \u2013 a Markdown superset for docs, dashboards, and slides with data",
+    "source": "hackernews",
+    "first_seen": "2026-04-19",
+    "digest_dates": [
+      "2026-04-19"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://solyto.app": {
+    "title": "Show HN: Solyto \u2013 a free, open-source all-in-one personal management app",
+    "source": "hackernews",
+    "first_seen": "2026-04-19",
+    "digest_dates": [
+      "2026-04-19"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://github.com/Fincept-Corporation/FinceptTerminal": {
+    "title": "Fincept-Corporation / FinceptTerminal",
+    "source": "github_trending",
+    "first_seen": "2026-04-19",
+    "digest_dates": [
+      "2026-04-19"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://github.com/thunderbird/thunderbolt": {
+    "title": "thunderbird / thunderbolt",
+    "source": "github_trending",
+    "first_seen": "2026-04-19",
+    "digest_dates": [
+      "2026-04-19"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://github.com/tractorjuice/arc-kit": {
+    "title": "tractorjuice / arc-kit",
+    "source": "github_trending",
+    "first_seen": "2026-04-19",
+    "digest_dates": [
+      "2026-04-19"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://github.com/pingdotgg/t3code": {
+    "title": "pingdotgg / t3code",
+    "source": "github_trending",
+    "first_seen": "2026-04-19",
+    "digest_dates": [
+      "2026-04-19"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://github.com/paperless-ngx/paperless-ngx": {
+    "title": "paperless-ngx / paperless-ngx",
+    "source": "github_trending",
+    "first_seen": "2026-04-19",
+    "digest_dates": [
+      "2026-04-19"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://github.com/ruvnet/RuView": {
+    "title": "ruvnet / RuView",
+    "source": "github_trending",
+    "first_seen": "2026-04-19",
+    "digest_dates": [
+      "2026-04-19"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://github.com/Donchitos/Claude-Code-Game-Studios": {
+    "title": "Donchitos / Claude-Code-Game-Studios",
+    "source": "github_trending",
+    "first_seen": "2026-04-19",
+    "digest_dates": [
+      "2026-04-19"
+    ],
+    "last_delivery": "markdown"
   }
 }
