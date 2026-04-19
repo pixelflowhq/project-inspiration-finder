@@ -63,7 +63,6 @@ async def fetch(client: httpx.AsyncClient) -> list[dict]:
                 "keywords": term,
                 "sort_on": "score",
                 "limit": 10,
-                "listing_type": "download",  # digital-only listings
             },
             headers=headers,
         )
