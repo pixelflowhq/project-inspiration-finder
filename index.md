@@ -1,0 +1,11 @@
+---
+layout: home
+title: Project Inspiration Digest
+---
+
+A daily digest of side project ideas scraped from Hacker News, Reddit, GitHub Trending, Product Hunt, and Etsy.
+
+## Digests
+
+- [2026-04-19](digests/2026-04-19)
+- [2026-04-16](digests/2026-04-16)
