@@ -430,5 +430,32 @@
       "2026-04-19"
     ],
     "last_delivery": "markdown"
+  },
+  "https://www.vincentgregoire.com/faceoff/": {
+    "title": "Show HN: Faceoff \u2013 A terminal UI for following NHL games",
+    "source": "hackernews",
+    "first_seen": "2026-04-19",
+    "digest_dates": [
+      "2026-04-19"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://news.ycombinator.com/item?id=47825520": {
+    "title": "Show HN: Google Gemini Is Scanning Your Photos \u2013 and the EU Said No",
+    "source": "hackernews",
+    "first_seen": "2026-04-19",
+    "digest_dates": [
+      "2026-04-19"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://github.com/mmaaz-git/sostactic": {
+    "title": "Show HN: Sostactic \u2013 polynomial inequalities using sums-of-squares in Lean",
+    "source": "hackernews",
+    "first_seen": "2026-04-19",
+    "digest_dates": [
+      "2026-04-19"
+    ],
+    "last_delivery": "markdown"
   }
 }
