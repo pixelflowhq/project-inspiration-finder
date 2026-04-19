@@ -2,7 +2,41 @@ import os
 
 import httpx
 
-SUBREDDITS = ["SideProject", "InternetIsBeautiful", "SomebodyMakeThis"]
+SUBREDDITS = [
+    "SideProject",
+    "InternetIsBeautiful",
+    "SomebodyMakeThis",
+    "buildinpublic",
+    "AppBusiness",
+    "microsaas",
+    "micro_saas",
+    "scaleinpublic",
+    "SaasDevelopers",
+    "Entrepreneur",
+    "productivity",
+    "business",
+    "smallbusiness",
+    "startups",
+    "passive_income",
+    "EntrepreneurRideAlong",
+    "Business_Ideas",
+    "SaaS",
+    "startup",
+    "Startup_Ideas",
+    "thesidehustle",
+    "juststart",
+    "ycombinator",
+    "Entrepreneurs",
+    "indiehackers",
+    "GrowthHacking",
+    "AppIdeas",
+    "growmybusiness",
+    "Solopreneur",
+    "vibecoding",
+    "startup_resources",
+    "indiebiz",
+    "AlphaandBetaUsers",
+]
 TOKEN_URL = "https://www.reddit.com/api/v1/access_token"
 BASE_URL = "https://oauth.reddit.com"
 

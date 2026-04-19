@@ -5,7 +5,7 @@ import httpx
 from dotenv import load_dotenv
 
 from src import delivery, memory, summariser
-from src.scrapers import github_trending, hackernews, producthunt, reddit
+from src.scrapers import etsy, github_trending, hackernews, producthunt, reddit
 
 load_dotenv()
 
@@ -22,6 +22,7 @@ async def run():
             reddit.fetch(client),
             github_trending.fetch(client),
             producthunt.fetch(client),
+            etsy.fetch(client),
             return_exceptions=True,  # partial failure: don't abort if one scraper fails
         )
 
@@ -51,7 +52,7 @@ async def run():
         if item["source"].startswith("reddit/"):
             boost = 3
         else:
-            boost = {"hackernews": 3, "producthunt": 3, "github_trending": 2}.get(item["source"], 1)
+            boost = {"hackernews": 3, "producthunt": 3, "github_trending": 2, "etsy": 2}.get(item["source"], 1)
         return (boost, int(item.get("score", 0)))
 
     new_items.sort(key=rank, reverse=True)
