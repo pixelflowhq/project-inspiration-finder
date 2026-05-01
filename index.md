@@ -7,6 +7,7 @@ A daily digest of side project ideas scraped from Hacker News, Reddit, GitHub Tr
 
 ## Digests
 
+- [2026-05-01](digests/2026-05-01)
 - [2026-04-30](digests/2026-04-30)
 - [2026-04-29](digests/2026-04-29)
 - [2026-04-28](digests/2026-04-28)
