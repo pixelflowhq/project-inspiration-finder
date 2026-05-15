@@ -22,4 +22,5 @@ async def fetch(client: httpx.AsyncClient, hours_back: int = 24) -> list[dict]:
             "score": hit["points"],
             "source": "hackernews",
         })
+    print(f"Hacker News: {len(items)} items fetched.")
     return items

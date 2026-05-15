@@ -48,11 +48,14 @@ SEARCH_TERMS = [
 
 async def fetch(client: httpx.AsyncClient) -> list[dict]:
     api_key = os.environ.get("ETSY_API_KEY")
+    shared_secret = os.environ.get("ETSY_SHARED_SECRET")
     if not api_key:
         print("Skipping Etsy: missing ETSY_API_KEY.")
         return []
 
-    headers = {"x-api-key": api_key}
+    # Etsy's v3 docs currently specify x-api-key as "keystring:shared_secret".
+    etsy_auth = f"{api_key}:{shared_secret}" if shared_secret else api_key
+    headers = {"x-api-key": etsy_auth}
     items = []
     seen: set[str] = set()
 
@@ -66,7 +69,17 @@ async def fetch(client: httpx.AsyncClient) -> list[dict]:
             },
             headers=headers,
         )
-        r.raise_for_status()
+        try:
+            r.raise_for_status()
+        except httpx.HTTPStatusError as exc:
+            body = exc.response.text.strip()
+            if len(body) > 500:
+                body = f"{body[:500]}..."
+            print(
+                "Etsy request failed "
+                f"(status={exc.response.status_code}, term={term!r}): {body or '<empty response>'}"
+            )
+            raise
         for listing in r.json().get("results", []):
             url = f"https://www.etsy.com/listing/{listing['listing_id']}"
             if url in seen:
@@ -80,4 +93,5 @@ async def fetch(client: httpx.AsyncClient) -> list[dict]:
                 "source": "etsy",
             })
 
+    print(f"Etsy: {len(items)} items fetched across {len(SEARCH_TERMS)} search terms.")
     return items

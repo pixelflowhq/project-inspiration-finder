@@ -26,4 +26,5 @@ async def fetch(client: httpx.AsyncClient) -> list[dict]:
             "stars_today": stars_today,
             "source": "github_trending",
         })
+    print(f"GitHub Trending: {len(items[:20])} items fetched.")
     return items[:20]

@@ -47,4 +47,5 @@ async def fetch(client: httpx.AsyncClient) -> list[dict]:
             "score": n["votesCount"],
             "source": "producthunt",
         })
+    print(f"Product Hunt: {len(items[:20])} items fetched.")
     return items[:20]

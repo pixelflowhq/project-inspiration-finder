@@ -91,4 +91,5 @@ async def fetch(client: httpx.AsyncClient, min_score: int = 50) -> list[dict]:
                 "num_comments": d["num_comments"],
                 "source": f"reddit/r/{sub}",
             })
+    print(f"Reddit: {len(items)} items fetched across {len(SUBREDDITS)} subreddits.")
     return items

@@ -62,7 +62,8 @@ Add these secrets under **Settings → Secrets and variables → Actions**:
 | `REDDIT_CLIENT_SECRET` | Optional | Same Reddit app |
 | `REDDIT_USER_AGENT` | Optional | e.g. `server:project-inspiration-finder:v1 (by /u/yourname)` |
 | `PRODUCT_HUNT_TOKEN` | Optional | producthunt.com/v2/oauth/applications |
-| `ETSY_API_KEY` | Optional | developers.etsy.com |
+| `ETSY_API_KEY` | Optional | Etsy app keystring from developers.etsy.com |
+| `ETSY_SHARED_SECRET` | Optional | Etsy app shared secret from developers.etsy.com |
 | `RESEND_API_KEY` | Optional | resend.com |
 | `EMAIL_FROM` | Optional | Verified sender in Resend |
 | `EMAIL_TO` | Optional | Your email address |
