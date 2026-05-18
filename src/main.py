@@ -29,7 +29,7 @@ async def run():
     all_items = []
     for result in results:
         if isinstance(result, Exception):
-            print(f"Scraper failed: {result}")
+            print(f"Scraper failed ({type(result).__name__}): {result}")
             continue
         all_items.extend(result)
 
