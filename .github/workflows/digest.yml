@@ -9,7 +9,7 @@ jobs:
   run-digest:
     runs-on: ubuntu-latest
     permissions:
-      contents: write       # needed to commit seen_items.json and digests/
+      contents: write       # needed to commit seen_items.json
 
     steps:
       - name: Checkout repo
@@ -31,18 +31,16 @@ jobs:
           REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
           PRODUCT_HUNT_TOKEN: ${{ secrets.PRODUCT_HUNT_TOKEN }}
           ETSY_API_KEY: ${{ secrets.ETSY_API_KEY }}
+          ETSY_SHARED_SECRET: ${{ secrets.ETSY_SHARED_SECRET }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
         run: python -m src.main
 
-      - name: Regenerate index
-        run: python -m src.generate_index
-
       - name: Commit state and digest
         run: |
           git config user.name "digest-bot"
           git config user.email "bot@noreply.github.com"
-          git add seen_items.json digests/ index.md
+          git add seen_items.json
           git diff --staged --quiet || git commit -m "chore: digest $(date -u +%Y-%m-%d) [skip ci]"
           git push

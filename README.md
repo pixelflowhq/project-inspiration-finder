@@ -8,7 +8,7 @@ A daily digest agent that scrapes developer and maker communities, deduplicates 
 2. Filters out anything seen in a previous digest
 3. Ranks and sends the top 20 items to Claude for a two-pass summary
 4. Writes a dated markdown file to `digests/` and optionally emails it via Resend
-5. Commits `seen_items.json` and the new digest back to the repo
+5. Commits `seen_items.json` back to the repo so future runs can deduplicate cleanly
 
 ## Sources
 
@@ -73,7 +73,7 @@ After adding secrets, trigger a test run manually: **Actions → Daily Inspirati
 ## Repository structure
 
 ```
-├── .github/workflows/digest.yml   # cron job — runs daily, commits results
+├── .github/workflows/digest.yml   # cron job — runs daily, commits state
 ├── src/
 │   ├── scrapers/
 │   │   ├── hackernews.py          # Algolia HN API
@@ -85,7 +85,7 @@ After adding secrets, trigger a test run manually: **Actions → Daily Inspirati
 │   ├── summariser.py              # Two-pass Claude summarisation
 │   ├── delivery.py                # Write .md digest + Resend email
 │   └── main.py                    # Orchestrator
-├── digests/                       # One .md file per run, committed to repo
+├── digests/                       # One .md file per run, kept local/ephemeral
 ├── seen_items.json                # Novelty memory — persisted via git commit
 ├── requirements.txt
 └── .env.example
