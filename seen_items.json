@@ -15721,5 +15721,185 @@
       "2026-07-13"
     ],
     "last_delivery": "markdown"
+  },
+  "https://superdario.pawb.de": {
+    "title": "Show HN: Super Dario",
+    "source": "hackernews",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://github.com/clawkwork/clawk": {
+    "title": "Show HN: Clawk \u2013 Give coding agents a disposable Linux VM, not your laptop",
+    "source": "hackernews",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://github.com/floodtide/dom-docx": {
+    "title": "Show HN: DOM-docx \u2013 HTML to native, editable Word docs (MIT)",
+    "source": "hackernews",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://github.com/marcelpanse/youtube-guitar-tab-parser": {
+    "title": "Show HN: YouTube Guitar Tab Parser",
+    "source": "hackernews",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://github.com/xqlsystems/xarray-sql/blob/claude/xarray-sql-mnist-demo/benchmarks/nn.py": {
+    "title": "Show HN: I implemented a neural network in SQL",
+    "source": "hackernews",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://github.com/jbwinters/jacquard-lang": {
+    "title": "Show HN: Jacquard, a programming language for AI-written, human-reviewed code",
+    "source": "hackernews",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://nobie.com": {
+    "title": "Show HN: Nobie \u2013 an Excel-compatible runtime for agents and humans",
+    "source": "hackernews",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://github.com/morganwilliscloud/billai-bass": {
+    "title": "Show HN: BillAI Bass, an AI-Powered Big Mouth Billy Bass Using Strands Agents",
+    "source": "hackernews",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://hackney.app/": {
+    "title": "Show HN: Hackney \u2013 Compare Uber, Lyft, Waymo, and Robotaxi Prices",
+    "source": "hackernews",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://github.com/yeet-src/sigwire": {
+    "title": "Show HN: Sigwire \u2013 a live TUI switchboard for every signal on your Linux box",
+    "source": "hackernews",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://sleuth-io.github.io/sx/2026/07/10/your-dropbox-is-now-a-skill-server.html": {
+    "title": "Show HN: Sx 2.0 \u2013 Share AI skills with your team through a Dropbox folder",
+    "source": "hackernews",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://github.com/mathaix/OpenClawMachines": {
+    "title": "Show HN: OpenClawMachines \u2013 Extending OpenClaw to the Enterprise",
+    "source": "hackernews",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://fixbugs.ai": {
+    "title": "Show HN: FixBugs \u2013 Reproduce production bugs and verify fixes",
+    "source": "hackernews",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://1shotchallenge.ai": {
+    "title": "Show HN: I built a one-prompt hackathon platform, free entry, sponsored prizes",
+    "source": "hackernews",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://www.producthunt.com/products/gooseworks?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+product-inspiration-finder+%28ID%3A+282730%29": {
+    "title": "Goose Ads Remixer",
+    "source": "producthunt",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://www.producthunt.com/products/clawteams?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+product-inspiration-finder+%28ID%3A+282730%29": {
+    "title": "ClawTeams",
+    "source": "producthunt",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://www.producthunt.com/products/pazi?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+product-inspiration-finder+%28ID%3A+282730%29": {
+    "title": "Pazi",
+    "source": "producthunt",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://www.producthunt.com/products/claude-overlay?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+product-inspiration-finder+%28ID%3A+282730%29": {
+    "title": "Claude Overlay",
+    "source": "producthunt",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://www.producthunt.com/products/trump-accounts?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+product-inspiration-finder+%28ID%3A+282730%29": {
+    "title": "Trump Accounts",
+    "source": "producthunt",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
+  },
+  "https://www.producthunt.com/products/branda-open-source-on-brand-ad-maker?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+product-inspiration-finder+%28ID%3A+282730%29": {
+    "title": "Branda",
+    "source": "producthunt",
+    "first_seen": "2026-07-14",
+    "digest_dates": [
+      "2026-07-14"
+    ],
+    "last_delivery": "markdown"
   }
 }
